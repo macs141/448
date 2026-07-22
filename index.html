@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple • Global Threat Intelligence</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto+Mono:wght@400;500&family=SF+Pro+Display:wght@400;500;600&display=swap');
         
         :root {
-            --primary: #00ff9d;
+            --primary: #ffffff; /* Changed green to white */
         }
         
         * {
@@ -25,6 +25,22 @@
             min-height: 100vh;
         }
         
+        .matrix-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+            animation: gridMove 30s linear infinite;
+        }
+        
+        @keyframes gridMove { 
+            0% { background-position: 0 0; } 
+            100% { background-position: 50px 50px; } 
+        }
+        
         header {
             background: rgba(10, 10, 10, 0.95);
             border-bottom: 1px solid var(--primary);
@@ -35,7 +51,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
         }
         
         .logo-container {
@@ -49,22 +65,22 @@
             height: 60px;
             border-radius: 50%;
             border: 2px solid var(--primary);
-            box-shadow: 0 0 25px var(--primary);
+            box-shadow: 0 0 25px rgba(255,255,255,0.3);
         }
         
         h1 {
-            font-family: 'Orbitron', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
             font-size: 2.8rem;
-            letter-spacing: 4px;
-            background: linear-gradient(90deg, #00ff9d, #00b36b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            letter-spacing: -2px;
+            color: white;
         }
         
         .tagline {
             font-size: 0.95rem;
             opacity: 0.8;
             letter-spacing: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
         }
         
         main {
@@ -79,19 +95,113 @@
             border-radius: 16px;
             padding: 40px;
             margin-bottom: 40px;
-            box-shadow: 0 0 40px rgba(0, 255, 157, 0.15);
-            animation: fadeIn 1s ease forwards;
+**✅ Updated Code with Your Requests**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple • Global Threat Intelligence</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto+Mono:wght@400;500&family=SF+Pro+Display:wght@400;500;600&display=swap');
+        
+        :root {
+            --primary: #ffffff; /* Changed green to white */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            color: #ffffff;
+            font-family: 'Roboto Mono', monospace;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        .matrix-bg {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: -1;
+            animation: gridMove 30s linear infinite;
+        }
+        
+        @keyframes gridMove { 
+            0% { background-position: 0 0; } 
+            100% { background-position: 50px 50px; } 
+        }
+        
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid var(--primary);
+            padding: 1.5rem 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 25px rgba(255,255,255,0.3);
+        }
+        
+        h1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -2px;
+            color: white;
+        }
+        
+        .tagline {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            letter-spacing: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+        }
+        
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .input-section {
+            background: rgba(20, 20, 40, 0.7);
+            border: 1px solid var(--primary);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
         }
         
         .form-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-        }
-        
-        .input-group {
-            display: flex;
-            flex-direction: column;
         }
         
         label {
@@ -109,48 +219,45 @@
             border-radius: 8px;
             font-family: 'Roboto Mono', monospace;
             font-size: 1rem;
-            transition: all 0.3s ease;
         }
         
         input:focus {
             border-color: var(--primary);
-            box-shadow: 0 0 15px rgba(0, 255, 157, 0.4);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
             outline: none;
         }
         
         .scan-button {
             margin-top: 30px;
             width: 100%;
-            background: linear-gradient(90deg, #00ff9d, #00cc7a);
+            background: linear-gradient(90deg, #ffffff, #e5e5e5);
             color: #000;
-            font-family: 'Orbitron', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
             font-size: 1.4rem;
-            font-weight: 700;
+            font-weight: 600;
             padding: 18px;
             border: none;
             border-radius: 12px;
             cursor: pointer;
-            transition: all 0.4s ease;
-            letter-spacing: 3px;
-            box-shadow: 0 10px 30px rgba(0, 255, 157, 0.4);
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
         }
         
         .scan-button:hover {
             transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(0, 255, 157, 0.6);
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
         }
         
         .terminal {
             display: none;
             background: #0a0a0a;
-            border: 2px solid #00ff9d;
+            border: 2px solid var(--primary);
             border-radius: 12px;
             padding: 25px;
             margin: 40px 0;
-            height: 380px;
+            height: 420px;
             overflow: hidden;
-            position: relative;
-            box-shadow: 0 0 60px rgba(0, 255, 157, 0.5);
+            box-shadow: 0 0 60px rgba(255, 255, 255, 0.2);
         }
         
         .terminal-header {
@@ -160,35 +267,37 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            border-bottom: 1px solid #333;
         }
-        
-        .terminal-dots {
-            display: flex;
-            gap: 8px;
-        }
-        
-        .dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-        
-        .red { background: #ff5f57; }
-        .yellow { background: #ffbd2e; }
-        .green { background: #27c93f; }
         
         .terminal-content {
-            height: calc(100% - 60px);
+            height: calc(100% - 80px);
             overflow-y: auto;
             font-size: 0.95rem;
             line-height: 1.6;
-            color: #00ff9d;
+            color: #ffffff;
         }
         
-        .scan-line {
-            animation: typing 0.8s steps(40, end) infinite;
-            white-space: pre-wrap;
+        .risk-meter {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: conic-gradient(#ffffff 0% 9%, #333 9% 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            position: relative;
+        }
+        
+        .risk-inner {
+            width: 140px;
+            height: 140px;
+            background: #0a0a0a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
         
         .report {
@@ -198,20 +307,7 @@
             border-radius: 16px;
             padding: 40px;
             margin: 40px 0;
-            box-shadow: 0 0 50px rgba(0, 255, 157, 0.2);
-        }
-        
-        .report-header {
-            text-align: center;
-            margin-bottom: 35px;
-        }
-        
-        .section-title {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 10px;
-            letter-spacing: 2px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.15);
         }
         
         .stats-grid {
@@ -223,21 +319,10 @@
         
         .stat-card {
             background: rgba(10, 10, 25, 0.8);
-            border: 1px solid #00ff9d33;
+            border: 1px solid #ffffff33;
             padding: 22px;
             border-radius: 12px;
             text-align: center;
-            transition: transform 0.3s ease;
-        }
-        
-        .stat-card:hover {
-            transform: scale(1.05);
-        }
-        
-        .stat-value {
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--primary);
         }
         
         .hacker-table {
@@ -246,21 +331,18 @@
             margin-top: 30px;
         }
         
-        .hacker-table th {
-            background: #1a1a2e;
-            padding: 16px;
+        .hacker-table th, .hacker-table td {
+            padding: 14px 16px;
             text-align: left;
-            color: var(--primary);
-            font-weight: 500;
         }
         
-        .hacker-table td {
-            padding: 14px 16px;
-            border-top: 1px solid #333;
+        .hacker-table th {
+            background: #1a1a2e;
+            color: var(--primary);
         }
         
         .hacker-table tr:hover {
-            background: rgba(0, 255, 157, 0.08);
+            background: rgba(255, 255, 255, 0.08);
         }
         
         footer {
@@ -273,62 +355,55 @@
         }
         
         .scan-progress {
-            height: 4px;
+            height: 6px;
             background: linear-gradient(90deg, transparent, var(--primary), transparent);
             width: 0%;
             animation: progress 120s linear forwards;
             margin: 15px 0;
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        
-        @keyframes progress {
-            to { width: 100%; }
-        }
+        @keyframes progress { to { width: 100%; } }
     </style>
 </head>
 <body>
+    <div class="matrix-bg"></div>
+    
     <header>
         <div class="logo-container">
-            <img src="api.png" alt="Mango Logo" class="logo" onerror="this.src='https://via.placeholder.com/60/00ff9d/000?text=M'">
+            <img src="api.png" alt="Apple Logo" class="logo" onerror="this.src='https://via.placeholder.com/60/ffffff/000?text=A'">
             <div>
-                <h1>Apple</h1></h1>
-                <div class="tagline">GLOBAL THREAT INTELLIGENCE PLATFORM</div>
+                <h1>Apple</h1>
+                <div class="tagline">Support • Global Threat Intelligence</div>
             </div>
         </div>
-        <div style="text-align: right;">
-            <div style="color: #00ff9d; font-size: 1.1rem;">SECURE • MONITOR • PROTECT</div>
+        <div style="text-align: right; color: var(--primary);">
+            <div>SECURE • MONITOR • PROTECT</div>
+            <div style="font-size: 0.9rem; margin-top: 4px;">127 NODES ONLINE</div>
         </div>
     </header>
 
     <main>
         <div class="input-section">
-            <h2 style="text-align: center; margin-bottom: 30px; font-family: 'Orbitron', sans-serif; color: var(--primary);">TARGET INTEL INPUT</h2>
+            <h2 style="text-align: center; margin-bottom: 30px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; color: var(--primary);">
+                TARGET INTEL INPUT
+            </h2>
             
             <div class="form-grid">
                 <div class="input-group">
                     <label for="name">FULL NAME</label>
-                    <input type="text" id="name" placeholder="Johnathan Reyes" required>
+                    <input type="text" id="name" placeholder="Johnathan Reyes">
                 </div>
                 <div class="input-group">
                     <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" id="email" placeholder="contact@target.com" required>
+                    <input type="email" id="email" placeholder="contact@target.com">
                 </div>
                 <div class="input-group">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" placeholder="+1 (555) 123-4567" required>
+                    <input type="tel" id="phone" placeholder="+1 (555) 123-4567">
                 </div>
                 <div class="input-group">
                     <label for="ip">IP ADDRESS</label>
-                    <input type="text" id="ip" placeholder="192.168.1.45" required>
+                    <input type="text" id="ip" placeholder="192.168.1.45">
                 </div>
             </div>
             
@@ -338,15 +413,15 @@
         <!-- Terminal -->
         <div id="terminal" class="terminal">
             <div class="terminal-header">
-                <div class="terminal-dots">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
+                <div style="display:flex; gap:8px;">
+                    <div class="dot" style="background:#ff5f57;"></div>
+                    <div class="dot" style="background:#ffbd2e;"></div>
+                    <div class="dot" style="background:#27c93f;"></div>
                 </div>
-                <div style="margin-left: 15px; color: #888;">apple-terminal@secure-node — bash</div>
+                <div style="margin-left:15px; color:#888;">apple-terminal@secure-node — bash</div>
             </div>
             <div class="terminal-content" id="terminal-content">
-                <div style="color: #00ff9d;">[INFO] Initializing Apple Global Scanner v4.2.1...</div>
+                <div style="color:#ffffff;">[INFO] Initializing Apple Global Scanner v4.2.1...</div>
                 <div id="scan-log"></div>
             </div>
             <div class="scan-progress" id="progress-bar"></div>
@@ -354,39 +429,37 @@
 
         <!-- Final Report -->
         <div id="report" class="report">
-            <div class="report-header">
-                <h2 class="section-title">SCAN COMPLETE — THREAT ASSESSMENT</h2>
-                <p style="opacity: 0.8;">Target Profile • <span id="report-time"></span></p>
+            <div style="text-align:center; margin-bottom:30px;">
+                <h2 style="color:var(--primary); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;">SCAN COMPLETE — THREAT ASSESSMENT</h2>
+                <p>Target Profile • <span id="report-time"></span></p>
             </div>
             
-            <div style="background: rgba(10,10,25,0.6); padding: 25px; border-radius: 10px; margin-bottom: 40px;">
-                <strong>INPUT INTELLIGENCE</strong><br>
+            <div style="background:rgba(10,10,25,0.6); padding:25px; border-radius:10px; margin-bottom:30px;">
+                <strong>INPUT INTELLIGENCE</strong><br><br>
                 Name: <span id="rep-name"></span><br>
                 Email: <span id="rep-email"></span><br>
                 Phone: <span id="rep-phone"></span><br>
                 IP Address: <span id="rep-ip"></span>
             </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value">379</div>
-                    <div>Hackers Detected</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">156</div>
-                    <div>Virus</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">114</div>
-                    <div>Active Nodes</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">9%</div>
-                    <div>Security Level</div>
+
+            <div style="text-align:center;">
+                <h3 style="color:var(--primary);">OVERALL RISK LEVEL</h3>
+                <div class="risk-meter">
+                    <div class="risk-inner">
+                        <div style="font-size:2.8rem; font-weight:700; color:#ffffff;">9%</div>
+                        <div style="color:#aaa; font-size:0.9rem;">SECURE</div>
+                    </div>
                 </div>
             </div>
+
+            <div class="stats-grid">
+                <div class="stat-card"><div style="font-size:2.4rem; color:var(--primary);">379</div><div>Hosts Detected</div></div>
+                <div class="stat-card"><div style="font-size:2.4rem; color:var(--primary);">156</div><div>Vulnerabilities</div></div>
+                <div class="stat-card"><div style="font-size:2.4rem; color:var(--primary);">114</div><div>Active Nodes</div></div>
+                <div class="stat-card"><div style="font-size:2.4rem; color:var(--primary);">9%</div><div>Security Level</div></div>
+            </div>
             
-            <h3 class="section-title" style="margin: 40px 0 20px;">DETECTED GLOBAL ACTIVITY</h3>
+            <h3 style="color:var(--primary); margin:40px 0 20px; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;">DETECTED GLOBAL ACTIVITY</h3>
             <table class="hacker-table">
                 <thead>
                     <tr>
@@ -396,29 +469,24 @@
                         <th>STATUS</th>
                     </tr>
                 </thead>
-                <tbody id="hacker-table-body">
-                    <!-- Populated by JS -->
-                </tbody>
+                <tbody id="hacker-table-body"></tbody>
             </table>
+
+            <button onclick="exportReport()" style="margin-top:30px; width:100%; padding:16px; background:#ffffff; color:black; border:none; border-radius:10px; font-weight:600; cursor:pointer; font-family: -apple-system, BlinkMacSystemFont, sans-serif;">
+                DOWNLOAD FULL REPORT
+            </button>
         </div>
     </main>
 
     <footer>
-        <p>© 2026 Apple Security Systems • All Rights Reserved • Authorized Intelligence Platform</p>
-        <p style="margin-top: 8px; font-size: 0.8rem;">This is a security interface. ios 26.7 scanning occurs.</p>
+        <p>© 2026 Apple Inc. • All Rights Reserved • Authorized Intelligence Platform</p>
+        <p style="margin-top:8px; font-size:0.8rem;">This is a demonstration interface. No actual scanning occurs.</p>
     </footer>
 
     <script>
-        // Sample cities and names
-        const cities = ["New York", "London", "Tokyo", "Moscow", "Mumbai", "São Paulo", "Sydney", "Cairo", "Berlin", "Dubai", 
-                       "Toronto", "Singapore", "Johannesburg", "Mexico City", "Paris", "Seoul", "Buenos Aires", "Istanbul", 
-                       "Bangkok", "Rome", "Lagos", "Madrid", "Beijing", "Jakarta", "Los Angeles", "Chicago", "Houston", 
-                       "Vancouver", "Melbourne", "Cape Town", "Hanoi", "Kuala Lumpur", "Lima", "Bogota", "Manila", "Warsaw", 
-                       "Stockholm", "Oslo", "Helsinki", "Athens"];
+        const cities = ["New York","London","Tokyo","Moscow","Mumbai","São Paulo","Sydney","Cairo","Berlin","Dubai","Toronto","Singapore","Johannesburg","Mexico City","Paris","Seoul","Buenos Aires","Istanbul","Bangkok","Rome","Lagos","Madrid","Beijing","Jakarta","Los Angeles","Chicago","Houston","Vancouver","Melbourne","Cape Town","Hanoi","Kuala Lumpur","Lima","Bogota","Manila","Warsaw","Stockholm","Oslo","Helsinki","Athens"];
         
-        const hackerNames = ["ShadowByte", "NeonGhost", "VoidWalker", "CipherFox", "QuantumReaper", "EchoRaven", "FrostByte", 
-                           "NexusVoid", "PixelWraith", "DarkCircuit", "ZeroDayKing", "PhantomGrid", "SilentStorm", "BladeRunnerX", 
-                           "NovaSpectre", "IronVortex", "GlitchLord", "StealthNode", "AetherHack", "TitanByte"];
+        const hackerNames = ["ShadowByte","NeonGhost","VoidWalker","CipherFox","QuantumReaper","EchoRaven","FrostByte","NexusVoid","PixelWraith","DarkCircuit","ZeroDayKing","PhantomGrid","SilentStorm","BladeRunnerX","NovaSpectre","IronVortex","GlitchLord","StealthNode","AetherHack","TitanByte"];
 
         function generateRandomIP() {
             return `${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}`;
@@ -429,84 +497,69 @@
             const email = document.getElementById('email').value || "N/A";
             const phone = document.getElementById('phone').value || "N/A";
             const ip = document.getElementById('ip').value || "N/A";
-            
-            // Hide previous report
+
             document.getElementById('report').style.display = 'none';
-            
-            // Show terminal
             const terminal = document.getElementById('terminal');
             terminal.style.display = 'block';
-            
+
             const log = document.getElementById('scan-log');
             log.innerHTML = '';
-            
-            // Simulate scan logs
+
             const messages = [
-                "[INFO] Connecting to global apple network...",
+                "[INFO] Connecting to global Apple threat network...",
                 "[INFO] Resolving target IP and geolocation data...",
                 "[SCAN] Probing open ports and services...",
-                "[ALERT] Cross-referencing with 14 international threat databases...",
+                "[ALERT] Cross-referencing 14 international databases...",
                 "[INFO] Analyzing email and phone metadata...",
-                "[TRACE] Mapping associated nodes and proxies...",
+                "[TRACE] Mapping associated nodes...",
                 "[DEEP] Running behavioral pattern analysis...",
                 "[INFO] Correlating activity across 40 jurisdictions..."
             ];
-            
+
             let i = 0;
             const interval = setInterval(() => {
                 if (i < messages.length) {
-                    log.innerHTML += `<div class="scan-line">${messages[i]}</div>`;
+                    log.innerHTML += `<div>${messages[i]}</div>`;
                     log.scrollTop = log.scrollHeight;
                     i++;
-                } else {
-                    clearInterval(interval);
-                }
-            }, 1800);
-            
-            // Auto complete scan after ~12 seconds ( scan zone, change to 120000 for real 2 minutes)
-            setTimeout(() => {
-                completeScan(name, email, phone, ip);
-            }, 12500);
+                } else clearInterval(interval);
+            }, 1400);
+
+            setTimeout(() => completeScan(name, email, phone, ip), 13000);
         }
-        
+
         function completeScan(name, email, phone, ip) {
             document.getElementById('terminal').style.display = 'none';
             const report = document.getElementById('report');
             report.style.display = 'block';
-            
-            // Fill input data
+
             document.getElementById('rep-name').textContent = name;
             document.getElementById('rep-email').textContent = email;
             document.getElementById('rep-phone').textContent = phone;
             document.getElementById('rep-ip').textContent = ip;
             document.getElementById('report-time').textContent = new Date().toLocaleString('en-US', {timeZone: 'America/New_York'});
-            
-            // Populate table
+
             const tbody = document.getElementById('hacker-table-body');
             tbody.innerHTML = '';
-            
+
             for (let i = 0; i < 40; i++) {
                 const city = cities[Math.floor(Math.random() * cities.length)];
                 const hacker = hackerNames[Math.floor(Math.random() * hackerNames.length)];
                 const randomIP = generateRandomIP();
-                
                 const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${city}</td>
-                    <td>${hacker}</td>
-                    <td>${randomIP}</td>
-                    <td><span style="color: #ffcc00;">ACTIVE</span></td>
-                `;
+                row.innerHTML = `<td>${city}</td><td>${hacker}</td><td>${randomIP}</td><td><span style="color:#ffcc00;">ACTIVE</span></td>`;
                 tbody.appendChild(row);
             }
-            
-            // Subtle scroll to report
+
             report.scrollIntoView({ behavior: "smooth" });
         }
-        
-        // Add some background animation
+
+        function exportReport() {
+            alert("✅ Report downloaded successfully! (Demo)");
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('%cMango Security Interface Loaded Successfully', 'color: #00ff9d; font-family: monospace;');
+            console.log('%cApple Support - Global Threat Intelligence Loaded', 'color:#ffffff; font-family:sans-serif;');
         });
     </script>
 </body>
